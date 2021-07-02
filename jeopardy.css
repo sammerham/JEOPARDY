@@ -1,0 +1,67 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+
+body {
+  background-color: #115ff4;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+}
+
+table, td, th {
+  border: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+  text-align: center;
+  background-color:  #060ce9;
+  font-size: 20px;
+}
+
+
+#start-game {
+  background-color: #8d2ab5;
+  color: white;
+  border: white;
+  padding: 10px 30px;
+  font-size: 40px;
+  border-radius: 12px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+
+td{
+  height: 100px;
+  width: 160px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+th{
+  height: 120px;
+  width: 160px;
+  text-transform: uppercase;
+}
+
+#main-table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+#spinner {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  display: none;
+}

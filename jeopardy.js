@@ -1,5 +1,5 @@
 
-const BASE_API_URL = "http://jservice.io/api/";
+const BASE_API_URL = "https://jservice.io/api/";
 const NUM_CATEGORIES = 6;
 const NUM_CLUES_PER_CAT = 5;
 const $board = $('#main-table');
@@ -36,7 +36,7 @@ let categories = [];
 
 async function getCategoryIds() {
     // const response = await axios.get('http://jservice.io/api/categories?count=100');
-    const response = await axios.get('http://jservice.io/api/categories', { params: { count: 100 } });
+    const response = await axios.get('https://jservice.io/api/categories', { params: { count: 100 } });
     let categoriesData = _.sampleSize(response.data, NUM_CATEGORIES);
     return categoriesData.map(cat => cat.id);
 }
@@ -136,7 +136,7 @@ function handleClick(evt) {
         clue.showing = "answer";
         target.empty();
         target.text(clue.answer);
-        target.css("background-color","#28a200");
+        target.css("background-color", "#28a200");
         // console.log('showing was question and now showing is ====>', clue.showing);
     } else {
         return;
